@@ -1,0 +1,10 @@
+.title {
+  font-size: 7rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: $pale-orange;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}
