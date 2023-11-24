@@ -1,0 +1,18 @@
+// Separate from class of the same name in components.module.scss
+.animatedHeaderText {
+  display: inline-block;
+  font-size: rem(35px);
+  font-weight: 900;
+  letter-spacing: -2px;
+  --bg-size: 400%;
+  --color-one: rgb(86, 136, 201);
+  --color-two: rgb(152, 181, 185);
+  background: linear-gradient(90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)) 0 0 / var(--bg-size) 100%;
+  animation: move-bg 20s infinite linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

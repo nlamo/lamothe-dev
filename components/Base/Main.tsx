@@ -1,6 +1,6 @@
 
 import Header from './Header'
-import Container from './Container'
+import ContentContainer from './ContentContainer'
 import Footer from './Footer'
 
 export default function Main() {
@@ -11,7 +11,7 @@ export default function Main() {
   return (
     <main style={style}>
       <Header/>
-      <Container/>
+      <ContentContainer/>
       <Footer/>
     </main>
   )

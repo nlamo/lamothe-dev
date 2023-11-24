@@ -10,7 +10,8 @@ import {
   IconUser
 } from '@tabler/icons-react';
 
-import classes from './Navigation.module.scss';
+import classes from './_Base.module.scss';
+import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
 interface NavbarLinkProps {
   icon: typeof IconHome2;
@@ -51,6 +52,7 @@ export function Navigation() {
 
   return (
     <nav className={classes.navbar}>
+      <ColorSchemeToggle />
       <div className={classes.navbarMain}>
         <Stack justify="center" gap={0}>
           {links}

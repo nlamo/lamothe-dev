@@ -1,5 +1,5 @@
 import { Title, Text, Anchor } from '@mantine/core';
-import classes from './Welcome.module.scss';
+import classes from './_Welcome.module.scss';
 
 export function Welcome() {
   return (
@@ -9,7 +9,7 @@ export function Welcome() {
         <Text className={classes.animatedHeaderText}>&nbsp;Nicholas</Text>
         <Text className={classes.titleText}>.</Text>
       </Title>
-      <Text c='dimmed' ta='center' size='lg' maw={580} mx='auto' mt='xl'>
+      <Text c='dimmed' ta='center' size='lg' maw={580} mx='auto' mb='xl'>
         And, yes, I'm a web developer. Mainly experienced in the LAMP stack / WordPress space. Check out my{' '}
         <Anchor href='https://www.nicholaslamothe.com/' size='lg'>
           original website{' '}
