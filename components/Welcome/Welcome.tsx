@@ -5,18 +5,17 @@ export function Welcome() {
   return (
     <>
       <Title className={classes.title} ta="center" mt={100}>
-        Welcome to{' '}
+        Hello! I'm{' '} 
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
-        </Text>
+          Nicholas
+        </Text>.
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
+        And, yes, I'm a web developer. Mainly experienced in the LAMP stack / WordPress space. Check out my{' '}
         <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
+          original website{' '}
         </Anchor>
-        . To get started edit page.tsx file.
+        for a point of comparison (but note that it's not WordPress).
       </Text>
     </>
   );
