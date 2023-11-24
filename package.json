@@ -12,8 +12,6 @@
     "lint:stylelint": "stylelint '**/*.css' --cache",
     "jest": "jest",
     "jest:watch": "jest --watch",
-    "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
-    "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "test": "npm run prettier:check && npm run lint && npm run typecheck && npm run jest",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build"
@@ -60,7 +58,6 @@
     "postcss": "^8.4.31",
     "postcss-preset-mantine": "1.11.0",
     "postcss-simple-vars": "^7.0.1",
-    "prettier": "^3.0.3",
     "sass": "^1.69.5",
     "storybook": "^7.5.2",
     "storybook-dark-mode": "^3.0.1",
