@@ -8,72 +8,7 @@
   color: $white;
 }
 
-// Entire body overflow is hidden, we set the scroll for the content with 'overflow-y'
-.body {
-  overflow: hidden;
-}
-
-// Main parent content, two columns for the whole page
-.grid-2-col {
-  display: grid;
-  grid-template-columns: 0.12fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: 100vh;
-  width: 100vw;
-
-  .dark-mode {
-    margin-top: 3rem;
-  }
-
-  // Nevigation bar (left column)
-  .nav {
-    @include grid-3-row-1-column;
-
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-    align-items: center;
-    justify-items: center;
-    width: 17.5vw;
-
-    .nav-list {
-      list-style: none;
-      line-height: 8vh;
-      font-size: 1.1vw;
-
-      li {
-        background-color: $white;
-
-        a {
-          display: block;
-          padding: 0.3rem 1rem;
-          text-decoration: none;
-
-          :link {
-            color: $black;
-          }
-
-          :visited {
-            color: $black;
-          }
-        }
-
-        :hover {
-          color: $pale-orange;
-        }
-      }
-    }
-  }
-
-  // Primary content (right column)
-  main {
-    overflow-y: scroll;
-  }
-}
-
 .images {
-  @include grid-3-col-1-row;
-
   * {
     padding: 1rem;
     margin: 0.5rem;
@@ -164,13 +99,6 @@
       margin: 0 1rem 1rem 1rem;
     }
   }
-}
-
-.overview-2,
-.projects,
-.thoughts,
-.contact {
-  @include grid-single;
 }
 
 .contact {

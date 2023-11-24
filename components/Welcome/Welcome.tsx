@@ -4,11 +4,11 @@ import classes from './Welcome.module.scss';
 export function Welcome() {
   return (
     <>
-      <Title className={classes.title} ta='center' mt={100}>
-        Hello! I'm{' '} 
-        <Text className={classes.animatedHeaderText}>
-          Nicholas
-        </Text>.
+      <Title ta='center' mt={100}>
+        <Text className={classes.titleText}>
+          Hello! I'm{' '} <Text className={classes.animatedHeaderText}>Nicholas</Text>.
+        </Text>
+      
       </Title>
       <Text c='dimmed' ta='center' size='lg' maw={580} mx='auto' mt='xl'>
         And, yes, I'm a web developer. Mainly experienced in the LAMP stack / WordPress space. Check out my{' '}

@@ -1,9 +1,9 @@
 import Header from './Header';
-import Images from './sections/Images';
-import Overview from './sections/Overview';
-import Projects from './sections/Projects';
+import Images from '../Sections/Images';
+import Overview from '../Sections/Overview';
+import Projects from '../Sections/Projects';
 
-export default function Container() {
+export default function ContentContainer() {
   return (
     <div className='section-container'>
       <Header></Header>

@@ -4,7 +4,7 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 
 export const metadata = {
-  title: 'Personal/portfolio website for Nicholas LaMothe',
+  title: 'Nicholas LaMothe - Web Developer',
   description: 'I am using Mantine with Next.js!',
 };
 
