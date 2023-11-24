@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Center, Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
+import { Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
 import {
   IconHome2,
   IconGauge,
@@ -9,6 +9,7 @@ import {
   IconCalendarStats,
   IconUser
 } from '@tabler/icons-react';
+
 import classes from './Navigation.module.scss';
 
 interface NavbarLinkProps {

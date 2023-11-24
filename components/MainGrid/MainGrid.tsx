@@ -1,16 +1,18 @@
 'use client';
 
-import { Container, Grid } from '@mantine/core';
+import { Grid } from '@mantine/core';
 
 import { Welcome } from '@/components/Welcome/Welcome';
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
 import { Navigation } from '@/components/Base/Navigation';
 
-export function MainGrid(props: any) {
+import classes from './MainGrid.module.scss';
+
+export function MainGrid() {
   return (
     <>
       <Grid justify="flex-center">
-        <Grid.Col span={1.5}>
+        <Grid.Col span={1.5} className={classes.fullHeight}>
           <Navigation />
         </Grid.Col>
         <Grid.Col span={10.5}>
@@ -19,6 +21,5 @@ export function MainGrid(props: any) {
         </Grid.Col>
       </Grid>
     </>
-
   );
 }
