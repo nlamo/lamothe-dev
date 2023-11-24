@@ -1,3 +1,4 @@
+// Colours
 $background-dark-blue: #192b3c;
 $background-dark-blue-secondary: #293849;
 $background-light-blue: #f0f8ff;
@@ -12,3 +13,11 @@ $black: #000000;
 $light-grey: #c5d4e0;
 $dark-green: #344b47;
 $pale-orange: #e79c76;
+
+// Define variables for your breakpoints,
+// values must be the same as in your theme
+$mantine-breakpoint-xs: '36em';
+$mantine-breakpoint-sm: '48em';
+$mantine-breakpoint-md: '62em';
+$mantine-breakpoint-lg: '75em';
+$mantine-breakpoint-xl: '88em';

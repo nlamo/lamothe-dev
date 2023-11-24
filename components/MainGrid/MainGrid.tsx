@@ -10,10 +10,10 @@ export function MainGrid(props: any) {
   return (
     <>
       <Grid justify="flex-center">
-        <Grid.Col span={2}>
+        <Grid.Col span={1.5}>
           <Navigation />
         </Grid.Col>
-        <Grid.Col span={10}>
+        <Grid.Col span={10.5}>
           <Welcome />
           <ColorSchemeToggle />
         </Grid.Col>

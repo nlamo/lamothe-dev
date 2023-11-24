@@ -1,9 +1,6 @@
 @use './variables.module.scss' as *;
+@use './utilities.module.scss' as *;
 @use './base.module.scss' as *;
-
-/**
- * @use all relevant .scss files in here, and style for components.
- */
 
 .headerSection {
   padding-top: 2.5rem;
@@ -31,7 +28,7 @@
 // Really nice! Attribution: https://codepen.io/jh3y/pen/YzYgMra, thanks @jh3y
 .animatedHeaderText {
   display: inline-block;
-  font-size: 7rem;
+  font-size: rem(80px);
   font-weight: 900;
   letter-spacing: -2px;
   --bg-size: 400%;
