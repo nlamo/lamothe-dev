@@ -3,18 +3,18 @@
 import { useState } from 'react';
 import { Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
 import {
-  IconHome2,
-  IconGauge,
-  IconDeviceDesktopAnalytics,
-  IconCalendarStats,
-  IconUser
+  IconPhoto,
+  IconBuildingBridge2,
+  IconBuildingFortress,
+  IconBulb,
+  IconMail
 } from '@tabler/icons-react';
 
 import classes from './_Base.module.scss';
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
 interface NavbarLinkProps {
-  icon: typeof IconHome2;
+  icon: typeof IconPhoto;
   label: string;
   active?: boolean;
   onClick?(): void;
@@ -31,15 +31,15 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
 }
 
 const data = [
-  { icon: IconHome2, label: 'Images' },
-  { icon: IconGauge, label: 'Overview' },
-  { icon: IconDeviceDesktopAnalytics, label: 'Projects' },
-  { icon: IconCalendarStats, label: 'Thoughts' },
-  { icon: IconUser, label: 'Contact' },
+  { icon: IconPhoto, label: 'Images' },
+  { icon: IconBuildingBridge2, label: 'Overview' },
+  { icon: IconBuildingFortress, label: 'Projects' },
+  { icon: IconBulb, label: 'Thoughts' },
+  { icon: IconMail, label: 'Contact' },
 ];
 
 export function Navigation() {
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(0);
 
   const links = data.map((link, index) => (
     <NavbarLink

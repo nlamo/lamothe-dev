@@ -1,27 +1,25 @@
 'use client';
 
-import { Button, Group, useMantineColorScheme } from '@mantine/core';
+import { Button, Group, useMantineColorScheme, MantineColorScheme } from '@mantine/core';
 
-import classes from './_ColorSchemeToggle.module.scss'
+import { IconBrightness } from '@tabler/icons-react';
 
 export function ColorSchemeToggle() {
-  const { setColorScheme } = useMantineColorScheme();
+  const { colorScheme, setColorScheme } = useMantineColorScheme()
+
+  const toggleColorScheme = (value?: MantineColorScheme) =>
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 
   return (
     <Group justify="center" mt="xl">
-      <Button 
+      <Button
         variant='gradient'
         gradient={{ from: 'blue.3', to: 'blue.4', deg: 90 }}
-        onClick={() => setColorScheme('light')}
+        onClick={() =>
+          toggleColorScheme()
+        }
       >
-        Light
-      </Button>
-      <Button 
-        variant='gradient'
-        gradient={{ from: 'blue.5', to: 'blue.6', deg: 90 }}
-        onClick={() => setColorScheme('dark')}
-      >
-        Dark
+        <IconBrightness size={30} />
       </Button>
     </Group>
   );

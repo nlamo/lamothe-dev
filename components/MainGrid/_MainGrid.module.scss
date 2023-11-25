@@ -1,9 +1,9 @@
 .leftColumn {
-  position: sticky;
   min-height: 100vh;
   padding: 0;
 }
 
 .rightColumn {
+  overflow: scroll;
   padding: 0;
 }
