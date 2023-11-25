@@ -13,6 +13,7 @@ import {
 import classes from './_Base.module.scss';
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
+
 interface NavbarLinkProps {
   icon: typeof IconPhoto;
   label: string;

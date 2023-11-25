@@ -1,4 +1,4 @@
-import { Card, Space, Text, Title } from '@mantine/core';
+import { Anchor, Card, Space, Text, Title } from '@mantine/core';
 
 import classes from './_Sections.module.scss';
 
@@ -42,7 +42,8 @@ export default function Overview() {
           </Text>
           <Space h='sm'/>
           <Text>
-            You can find my resume <a href='resume/nicholas-lamothe-resume.pdf' target='_blank'>here</a>.
+            You can find my resume{' '}
+            <Anchor href='./nicholas-lamothe-resume.pdf' target='_blank'>here</Anchor>.
           </Text>
         </section>
       </div>
