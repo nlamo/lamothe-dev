@@ -4,6 +4,7 @@ import Images from '../Sections/Images';
 import Overview from '../Sections/Overview';
 import Projects from '../Sections/Projects';
 import Contact from '../Sections/Contact';
+import Footer from './Footer';
 
 export default function ContentContainer() {
   return (
@@ -19,6 +20,7 @@ export default function ContentContainer() {
         <Projects></Projects>
         <Contact></Contact>
         <Space h='xl'/>
+        <Footer/>
       </Flex>
     </Container>
   )

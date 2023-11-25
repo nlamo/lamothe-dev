@@ -1,7 +1,5 @@
 
-import Header from './Header'
 import ContentContainer from './ContentContainer'
-import Footer from './Footer'
 
 export default function Main() {
   const style = {
@@ -10,9 +8,7 @@ export default function Main() {
 
   return (
     <main style={style}>
-      <Header/>
       <ContentContainer/>
-      <Footer/>
     </main>
   )
 }
