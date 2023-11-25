@@ -13,7 +13,7 @@ export function ColorSchemeToggle() {
     setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 
   return (
-    <Group className={classes.colorSchemeToggleContainer} justify="center" mt="xl">
+    <Group className={classes.colorSchemeToggleContainer} justify='center' mt='xl'>
       <Button
         className={classes.colorSchemeToggle}
         variant='gradient'

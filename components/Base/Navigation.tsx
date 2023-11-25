@@ -23,7 +23,7 @@ interface NavbarLinkProps {
 
 function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
   return (
-    <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
+    <Tooltip label={label} position='right' transitionProps={{ duration: 0 }}>
       <UnstyledButton onClick={onClick} className={classes.link} data-active={active || undefined}>
         <Icon style={{ width: rem(40), height: rem(40) }} stroke={1.5} />
       </UnstyledButton>
@@ -55,7 +55,7 @@ export function Navigation() {
     <nav className={classes.navbar}>
       <ColorSchemeToggle />
       <div className={classes.navbarMain}>
-        <Stack justify="center" gap={0}>
+        <Stack justify='center' gap={0}>
           {links}
         </Stack>
       </div>
