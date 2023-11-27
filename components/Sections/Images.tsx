@@ -20,7 +20,7 @@ export default function Images() {
       <Card className='quote' shadow='lg' padding='lg' radius='md' withBorder>
         <Image src='./img/undraw_dev_productivity_re_fylf.svg' alt='Productivity' />
         <Text className='quoteText'>
-          Practice yourself, for heaven's sake in little things, and then proceed to
+          Practice yourself, for heaven&apos;s sake in little things, and then proceed to
           greater. - Epictetus
         </Text>
       </Card>

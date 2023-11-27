@@ -1,12 +1,12 @@
 'use client';
 
-import { Grid, ScrollArea } from '@mantine/core';
+import { Grid, ScrollArea } from '@mantine/core'
 
-import { Welcome } from '@/components/Welcome/Welcome';
-import { Navigation } from '@/components/Base/Navigation';
+import { Welcome } from '@/components/Welcome/Welcome'
+import { Navigation } from '@/components/Base/Navigation'
 
-import classes from './_MainGrid.module.scss';
-import Content from '../Base/Content';
+import classes from './_MainGrid.module.scss'
+import Content from '../Base/Content'
 
 export function MainGrid() {
   return (
@@ -23,5 +23,5 @@ export function MainGrid() {
         </Grid.Col>
       </Grid>
     </>
-  );
+  )
 }

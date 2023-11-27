@@ -13,5 +13,8 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'import/extensions': 'off',
+    'jsx-quotes': 'off',
+    'max-len': 'off',
+    '@typescript-eslint/semi': 'off'
   },
-};
+}

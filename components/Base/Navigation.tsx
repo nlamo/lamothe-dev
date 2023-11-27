@@ -1,24 +1,23 @@
 'use client';
 
 import { useState } from 'react';
-import { Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
+import { Tooltip, UnstyledButton, Stack, rem } from '@mantine/core'
 import {
   IconPhoto,
   IconBuildingBridge2,
   IconBuildingFortress,
   IconBulb,
-  IconMail
-} from '@tabler/icons-react';
+  IconMail,
+} from '@tabler/icons-react'
 
-import classes from './_Base.module.scss';
-import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
-
+import classes from './_Base.module.scss'
+import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle'
 
 interface NavbarLinkProps {
-  icon: typeof IconPhoto;
-  label: string;
-  active?: boolean;
-  onClick?(): void;
+  icon: typeof IconPhoto
+  label: string
+  active?: boolean
+  onClick?(): void
 }
 
 function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
@@ -28,7 +27,7 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
         <Icon style={{ width: rem(40), height: rem(40) }} stroke={1.5} />
       </UnstyledButton>
     </Tooltip>
-  );
+  )
 }
 
 const data = [
@@ -37,10 +36,10 @@ const data = [
   { icon: IconBuildingFortress, label: 'Projects' },
   { icon: IconBulb, label: 'Thoughts' },
   { icon: IconMail, label: 'Contact' },
-];
+]
 
 export function Navigation() {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(0)
 
   const links = data.map((link, index) => (
     <NavbarLink
@@ -49,7 +48,7 @@ export function Navigation() {
       active={index === active}
       onClick={() => setActive(index)}
     />
-  ));
+  ))
 
   return (
     <nav className={classes.navbar}>
@@ -60,5 +59,5 @@ export function Navigation() {
         </Stack>
       </div>
     </nav>
-  );
+  )
 }

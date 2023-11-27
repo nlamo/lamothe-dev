@@ -1,26 +1,26 @@
-import { Container, Flex, Space } from '@mantine/core';
+import { Container, Flex, Space } from '@mantine/core'
 
-import Images from '../Sections/Images';
-import Overview from '../Sections/Overview';
-import Projects from '../Sections/Projects';
-import Contact from '../Sections/Contact';
-import Footer from './Footer';
+import Images from '../Sections/Images'
+import Overview from '../Sections/Overview'
+import Projects from '../Sections/Projects'
+import Contact from '../Sections/Contact'
+import Footer from './Footer'
 
 export default function Content() {
   return (
     <Container size='md'>
-      <Flex   
+      <Flex
         rowGap='lg'
         columnGap='lg'
         justify='center'
         direction='column'
       >
-        <Images></Images>
-        <Overview></Overview>
-        <Projects></Projects>
-        <Contact></Contact>
-        <Space h='xl'/>
-        <Footer/>
+        <Images />
+        <Overview />
+        <Projects />
+        <Contact />
+        <Space h='xl' />
+        <Footer />
       </Flex>
     </Container>
   )

@@ -1,7 +1,7 @@
-import '@mantine/core/styles.css';
-import React from 'react';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
-import { theme } from '../theme';
+import '@mantine/core/styles.css'
+import React from 'react'
+import { MantineProvider, ColorSchemeScript } from '@mantine/core'
+import { theme } from '../theme'
 
 export const metadata = {
   title: 'Nicholas LaMothe - Web Developer',
@@ -23,5 +23,5 @@ export default function RootLayout({ children }: { children: any }) {
         <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
-  );
+  )
 }

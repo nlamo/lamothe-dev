@@ -1,7 +1,7 @@
-require('@testing-library/jest-dom');
+require('@testing-library/jest-dom')
 
-const { getComputedStyle } = window;
-window.getComputedStyle = (elt) => getComputedStyle(elt);
+const { getComputedStyle } = window
+window.getComputedStyle = (elt) => getComputedStyle(elt)
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
@@ -15,7 +15,7 @@ Object.defineProperty(window, 'matchMedia', {
     removeEventListener: jest.fn(),
     dispatchEvent: jest.fn(),
   })),
-});
+})
 
 class ResizeObserver {
   observe() {}

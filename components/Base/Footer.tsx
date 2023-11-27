@@ -1,6 +1,6 @@
-import { Container, Group, ActionIcon, rem } from '@mantine/core';
-import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
-import classes from './_Base.module.scss';
+import { Container, Group, ActionIcon, rem } from '@mantine/core'
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
+import classes from './_Base.module.scss'
 
 export default function Footer() {
   return (
@@ -16,5 +16,5 @@ export default function Footer() {
         </Group>
       </Container>
     </div>
-  );
+  )
 }
